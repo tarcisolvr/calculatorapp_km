@@ -1,0 +1,128 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Fundo preto */
+    color: #ff0000; /* Texto vermelho */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container da calculadora */
+.container {
+    background-color: #2e2e2e; /* Fundo cinza escuro */
+    color: #ffffff; /* Texto branco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px; /* Ajuste o tamanho máximo conforme necessário */
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Campos de entrada */
+input[type="number"],
+input[type="text"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc; /* Borda cinza */
+    border-radius: 4px;
+    background-color: #333333; /* Fundo dos campos */
+    color: #ffffff; /* Texto dos campos */
+    font-size: 16px; /* Texto maior */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Texto maior */
+}
+
+button.calculate {
+    background-color: #ff0000; /* Fundo vermelho */
+    color: #ffffff; /* Texto branco */
+}
+
+button.calculate:hover {
+    background-color: #cc0000; /* Fundo vermelho escuro */
+}
+
+button.graph {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #ffffff; /* Texto branco */
+}
+
+button.graph:hover {
+    background-color: #555555; /* Fundo cinza claro */
+}
+
+/* Resultados */
+.results {
+    margin-top: 20px;
+}
+
+.result-box {
+    background-color: #444444; /* Fundo dos resultados */
+    border: 1px solid #666666; /* Borda cinza */
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.result-box .label {
+    font-size: 18px; /* Texto maior */
+    margin-bottom: 5px;
+}
+
+.result-box .value {
+    font-size: 16px; /* Texto maior */
+    color: #ffffff; /* Texto branco */
+}
+
+.result-box .value.cost {
+    color: #ffcc00; /* Resultado de custo em amarelo */
+}
+
+.result-box .value.profit {
+    color: #00ff00; /* Resultado de lucro em verde */
+}
+
+/* Estilo para os botões de tipo de veículo */
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.radio-buttons label {
+    display: flex;
+    align-items: center;
+    background-color: #333333; /* Fundo dos botões */
+    color: #ffffff; /* Texto branco */
+    padding: 10px;
+    border: 1px solid #666666; /* Borda cinza */
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.radio-buttons input[type="radio"] {
+    margin-right: 10px;
+}

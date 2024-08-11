@@ -1,0 +1,10 @@
+calculator-app/
+|-- main.go
+|-- go.mod
+|-- static/
+|   |-- css/
+|   |   |-- style.css
+|   |-- js/
+|       |-- script.js
+|-- templates/
+    |-- index.html
